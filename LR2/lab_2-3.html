@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <title>Сираев_Аюпов_Хасанов_ПИ_326</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+    #chel {
+        position: absolute;
+        left:50%;
+        top:50%;
+    }
+    </style>
+    <img src="https://sun9-78.userapi.com/impg/DZ4Fo8KqRmQwEwhp_kOj6KwA8EsoWhAKBzPhQQ/P225tZnDw6M.jpg?size=320x242&quality=95&sign=03f34003c153ecc638608af93e45a785&type=album" 
+        width="200" height="150" id="chel"/>
+    <script language="javascript" type="text/javascript">
+        document.onkeydown = function checkKeycode(event){
+            let keycode;
+            if(!event) var event = window.event;
+            if (event.keyCode) keycode = event.keyCode; 
+            else if(event.which) keycode = event.which;
+            if (keycode==39) {
+                $('#chel').animate({left: '+=20'},1000);
+            }
+            if (keycode==38) {
+                $('#chel').animate({top: '-=20'},1000);
+            }
+            if (keycode==37) {
+                $('#chel').animate({left: '-=20'},1000);
+            }
+            if (keycode==40) {
+                $('#chel').animate({top: '+=20'},1000);
+            }
+        }
+    </script>
+    <h4 class="text">2 Сираев Аюпов Хасанов ПИ-326</h4>
+
+    <a href="lab_2-1.html"> Laba 1</a>
+    <a href="lab_2-2.html"> Laba 2</a>
+    <a href="lab_2-4.html"> Laba 4</a>
+    <a href="lab_2-5.html"> Laba 5</a>
+    <a href="lab_2-6.html"> Laba 6</a>
+    <a href="lab_2-7.html"> Laba 7</a>
+</html>
+

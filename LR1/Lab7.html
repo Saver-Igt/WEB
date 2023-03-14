@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Сираев_Аюпов_Хасанов_ПИ_326</title>
+        <script language="JavaScript">
+            function array_build(x,y,z,j) {
+                do_ = x.slice(y,z);
+                document.write(j + do_ + "<br>");
+                return do_; } 
+        </script>
+    </head>
+    <body>
+        <script language="JavaScript"> 
+            subjects=new Array("Алгебра","Геометрия","Физика","Русский язык","Литература");
+            document.write("Все предметы: " + subjects + "<br>");
+
+            exact =new Array();
+            exact=subjects.slice(0,3);
+            document.write("Точные предметы: " + exact + "<br>");
+            // Через функцию в head            
+            Humanitarian  = array_build(subjects, 3, 5, "Гуманитарные предметы: ");
+        </script>
+
+        <a href="Lab1.html"> Laba 1</a>
+        <a href="Lab2.html"> Laba 2</a>
+        <a href="Lab3.html"> Laba 3</a>
+        <a href="Lab4.html"> Laba 4</a>
+        <a href="Lab5.html"> Laba 5</a>
+        <a href="Lab6.html"> Laba 6</a>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Сираев_Аюпов_Хасанов_ПИ_326</title>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            let button = document.getElementById('input_button_bg_change');
+            let body = document.getElementsByTagName('body')[0];
+            let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'black', 'white', 'grey'];
+
+            button.onclick = function() {
+                body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                let text = document.getElementsByClassName('text')[0];
+
+                if(body.style.backgroundColor == 'black'){
+                    text.style.color = 'white';
+                }else{
+                    text.style.color = 'black';
+                }
+            };
+        };
+</script>
+</head>
+
+<body>
+    <center>
+        <input type="button" id="input_button_bg_change" value="Поменять"/>
+    </center>
+</body>
+
+<h4 class="text">2 Сираев Аюпов Хасанов ПИ-326</h4>
+
+<a href="lab_2-2.html"> Laba 2</a>
+<a href="lab_2-3.html"> Laba 3</a>
+<a href="lab_2-4.html"> Laba 4</a>
+<a href="lab_2-5.html"> Laba 5</a>
+<a href="lab_2-6.html"> Laba 6</a>
+<a href="lab_2-7.html"> Laba 7</a>
+</html>
