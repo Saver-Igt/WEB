@@ -1,0 +1,9 @@
+.news{
+    overflow: hidden;
+    transition: all .3s;
+    transform: scale(.95);
+    cursor: pointer;
+}
+.news:hover {
+    transform: scale(1);
+}
