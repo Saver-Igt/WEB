@@ -131,7 +131,7 @@ $('#slider3').slider({
 $( "#slider1" ).slider({
     change: function( event, ui ) {
         if(points >= 0){
-            let value = $( "#slider1" ).slider( "option", "value" );
+            let value = ui.value;
 
             const difference = value-strength;
 
@@ -139,6 +139,8 @@ $( "#slider1" ).slider({
                 points = points - difference;
                 strength = value;
                 $('.strength').text("Сила: " + strength);
+            }else{
+                $( "#slider1" ).slider( "option", "value", strength);
             }
         }
         $('.points').text("Количество очков: " + points);
@@ -147,13 +149,15 @@ $( "#slider1" ).slider({
 $( "#slider2" ).slider({
     change: function( event, ui ) {
         if(points >= 0){
-            let value = $( "#slider2" ).slider( "option", "value" );
+            let value = ui.value;
             const difference = value-agility;
 
             if(difference <= points){
                 points = points - difference;
                 agility = value;
                 $('.agility').text("Ловкость: " + agility);
+            }else{
+                $( "#slider2" ).slider( "option", "value", agility);
             }
         }
         $('.points').text("Количество очков: " + points);
@@ -162,13 +166,15 @@ $( "#slider2" ).slider({
 $( "#slider3" ).slider({
     change: function( event, ui ) {
         if(points >= 0){
-            let value = $( "#slider3" ).slider( "option", "value" );
+            let value = ui.value;
             const difference = value-intelligence;
 
             if(difference <= points){
                 points = points - difference;
                 intelligence = value;
                 $('.intelligence').text("Интелект: " + intelligence);
+            }else{
+                $( "#slider3" ).slider( "option", "value", intelligence);
             }
         }
         $('.points').text("Количество очков: " + points);
